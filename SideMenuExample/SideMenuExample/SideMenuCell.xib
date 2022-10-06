@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ZNb-Yw-HXr" customClass="SideMenuCell" customModule="SideMenuExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZNb-Yw-HXr" id="R6T-0Z-GYQ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yq0-tB-c3f">
+                        <rect key="frame" x="-47" y="-86" width="147" height="216"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="147" id="hiX-Yp-xnI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woz-eO-QpF">
+                        <rect key="frame" x="158" y="12" width="42" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Yq0-tB-c3f" firstAttribute="leading" secondItem="R6T-0Z-GYQ" secondAttribute="leadingMargin" constant="-63" id="Fat-3j-cH0"/>
+                    <constraint firstItem="Yq0-tB-c3f" firstAttribute="centerY" secondItem="Woz-eO-QpF" secondAttribute="centerY" id="OZ3-x2-BSP"/>
+                    <constraint firstItem="Woz-eO-QpF" firstAttribute="top" secondItem="R6T-0Z-GYQ" secondAttribute="top" constant="12" id="Upu-0r-iAH"/>
+                    <constraint firstItem="Yq0-tB-c3f" firstAttribute="centerY" secondItem="R6T-0Z-GYQ" secondAttribute="centerY" id="eOQ-Y6-SqJ"/>
+                    <constraint firstItem="Yq0-tB-c3f" firstAttribute="top" secondItem="R6T-0Z-GYQ" secondAttribute="topMargin" constant="-97" id="jnb-I2-Lpn"/>
+                    <constraint firstItem="Woz-eO-QpF" firstAttribute="leading" secondItem="Yq0-tB-c3f" secondAttribute="trailing" constant="58" id="uyb-QC-r9h"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="Yq0-tB-c3f" id="XcT-Qr-7wo"/>
+                <outlet property="titleLabel" destination="Woz-eO-QpF" id="TPQ-TK-jb5"/>
+            </connections>
+            <point key="canvasLocation" x="469.56521739130437" y="-114.50892857142857"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+</document>

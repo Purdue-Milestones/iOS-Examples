@@ -25,10 +25,10 @@ class ViewController: UIViewController {
     var firstnamesarray = [String]()
     var lastnamesarray = [String]()
     var agesarray = [String]()
+    var accumulatedfirstnamearray = [String]()
     
     var defaults = UserDefaults.standard
 
-  
     
     @IBAction func submitButton(_ sender: Any)
     {
@@ -36,10 +36,12 @@ class ViewController: UIViewController {
         //Saving user input to arrays
         firstnamesarray.append(firstnameInput.text!)
         print("click button",firstnamesarray)
+        print("ACCUM",accumulatedfirstnamearray)
         defaults.set(firstnamesarray, forKey: "SavedNameArray")
        
-        
-        print("after adding to NSUsers", firstnamesarray)
+        var savedNameArray = defaults.object(forKey: "SavedNameArray") as? [String] ?? [String]()
+        savedNameArray = accumulatedfirstnamearray + savedNameArray
+        print("after adding to NSUsers", savedNameArray)
         
         lastnamesarray.append(lastnameInput.text!)
         defaults.set(lastnamesarray, forKey: "SavedLastNameArray")
@@ -52,9 +54,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //*maybe delete repeats??
-        
         // Save arrays to NSUsers for data storage
         let savedNameArray = defaults.object(forKey: "SavedNameArray") as? [String] ?? [String]()
         
@@ -65,6 +64,9 @@ class ViewController: UIViewController {
         print("Saved First Names: \(savedNameArray)")
         print("Saved Last Names: \(savedLastNameArray)")
         print("Saved Ages: \(savedAgeArray)")
+        
+        
+        accumulatedfirstnamearray = accumulatedfirstnamearray + savedNameArray
         
         //Table View
         tableView.delegate = self
@@ -83,14 +85,14 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //savednamearray initialization
         let savedNameArray = defaults.object(forKey: "SavedNameArray") as? [String] ?? [String]()
-        return savedNameArray.count
+        return accumulatedfirstnamearray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //savednamearray initialization
         let savedNameArray = defaults.object(forKey: "SavedNameArray") as? [String] ?? [String]()
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = savedNameArray[indexPath.row]
+        cell.textLabel?.text = accumulatedfirstnamearray[indexPath.row]
         
         return cell
     }
