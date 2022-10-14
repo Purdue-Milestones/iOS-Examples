@@ -1,3 +1,11 @@
+//
+//  MainViewController.swift
+//  SideMenuTutorial
+//
+//  Created by Carolina Solís on 10/6/22.
+//
+
+
 import UIKit
 
 class MainViewController:
@@ -22,7 +30,7 @@ class MainViewController:
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
+        self.view.backgroundColor =  #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
 
         self.sideMenuShadowView = UIView(frame: self.view.bounds)
                 self.sideMenuShadowView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -199,3 +207,4 @@ extension MainViewController: UIGestureRecognizerDelegate {
     
     // ...
 }
+

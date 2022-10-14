@@ -94,11 +94,25 @@
                     <view key="view" contentMode="scaleToFill" id="eYi-VE-wTb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sT4-bu-pdA">
+                                <rect key="frame" x="32" y="272" width="350" height="350"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="ISy-uq-qRR"/>
+                                    <constraint firstAttribute="width" constant="350" id="MSE-xZ-Kgq"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3qW-jl-glr"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="sT4-bu-pdA" firstAttribute="centerX" secondItem="eYi-VE-wTb" secondAttribute="centerX" id="kPj-YG-5uL"/>
+                            <constraint firstItem="sT4-bu-pdA" firstAttribute="centerY" secondItem="eYi-VE-wTb" secondAttribute="centerY" id="wOQ-mO-jFQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f3i-C1-vWY">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="wQh-CY-LCs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="wQh-CY-LCs">
                             <connections>
                                 <action selector="sideMenuBtn:" destination="zEI-lP-duL" id="pvd-Qb-0bc"/>
                             </connections>
@@ -136,11 +150,25 @@
                     <view key="view" contentMode="scaleToFill" id="jwt-Gw-L0u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-Ha-pye">
+                                <rect key="frame" x="32" y="273.5" width="350" height="349"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="HpM-11-P7b"/>
+                                    <constraint firstAttribute="width" constant="350" id="nl3-5W-cEo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="szO-cW-47r"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="Fl2-Ha-pye" firstAttribute="centerX" secondItem="jwt-Gw-L0u" secondAttribute="centerX" id="EB6-dZ-5Ch"/>
+                            <constraint firstItem="Fl2-Ha-pye" firstAttribute="centerY" secondItem="jwt-Gw-L0u" secondAttribute="centerY" id="cjX-yg-GUa"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="elO-3a-hUV">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="v8h-RT-lFe">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="v8h-RT-lFe">
                             <connections>
                                 <action selector="sideMenuBtn:" destination="93f-82-Eh8" id="2OP-0e-rUs"/>
                             </connections>
@@ -178,11 +206,25 @@
                     <view key="view" contentMode="scaleToFill" id="zSJ-eO-v2T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="book.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="75J-kH-6zO">
+                                <rect key="frame" x="32" y="274" width="350" height="347.5"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="HuQ-jT-Mqu"/>
+                                    <constraint firstAttribute="height" constant="350" id="nbb-su-GQv"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="LNd-2a-7jA"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="75J-kH-6zO" firstAttribute="centerX" secondItem="zSJ-eO-v2T" secondAttribute="centerX" id="5Jy-bU-DJr"/>
+                            <constraint firstItem="75J-kH-6zO" firstAttribute="centerY" secondItem="zSJ-eO-v2T" secondAttribute="centerY" id="hzg-Gs-pHK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WVu-Uh-ojc">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="0dJ-W7-SCI"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="line.3.horizontal" catalog="system" id="0dJ-W7-SCI"/>
                     </navigationItem>
                     <connections>
                         <outlet property="sideMenuBtn" destination="0dJ-W7-SCI" id="v8c-vY-GpL"/>
@@ -194,8 +236,24 @@
         </scene>
     </scenes>
     <resources>
+        <image name="book.fill" catalog="system" width="128" height="95"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="103"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

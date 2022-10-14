@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="m3N-l7-gpw" customClass="SideMenuCell" customModule="SideMenuTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m3N-l7-gpw" id="UQQ-MB-Ipy">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hEz-uB-9DC">
+                        <rect key="frame" x="6" y="0.0" width="70" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="qqK-T5-EXS"/>
+                            <constraint firstAttribute="width" constant="70" id="z87-tw-vkb"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHU-Qi-OJ8">
+                        <rect key="frame" x="129" y="11.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GHU-Qi-OJ8" firstAttribute="centerY" secondItem="UQQ-MB-Ipy" secondAttribute="centerY" id="CqG-xS-Way"/>
+                    <constraint firstItem="hEz-uB-9DC" firstAttribute="leading" secondItem="UQQ-MB-Ipy" secondAttribute="leading" constant="6" id="P9Z-Y4-gsS"/>
+                    <constraint firstItem="GHU-Qi-OJ8" firstAttribute="leading" secondItem="hEz-uB-9DC" secondAttribute="trailing" constant="53" id="mvy-0x-MUA"/>
+                    <constraint firstItem="hEz-uB-9DC" firstAttribute="centerY" secondItem="UQQ-MB-Ipy" secondAttribute="centerY" id="xn2-wy-GLZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="hEz-uB-9DC" id="Wea-3e-o09"/>
+                <outlet property="titleLabel" destination="GHU-Qi-OJ8" id="EBT-hC-YGE"/>
+            </connections>
+            <point key="canvasLocation" x="-104.34782608695653" y="66.964285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
