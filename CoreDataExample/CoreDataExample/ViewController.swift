@@ -18,8 +18,7 @@ class ViewController: UIViewController {
     //data for table
     var items:[Person]?
     
-    
-    
+    //viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -31,10 +30,36 @@ class ViewController: UIViewController {
         
     }
     
+    func relationshipDemo() {
+        //create a family
+        let family = Family(context: context)
+        family.name = "Familia X"
+        
+        //create a person
+        let person = Person(context: context)
+        person.name = "Persona X"
+        
+        //add person to family
+        family.addToPeople(person)
+        
+        //save context
+        try! context.save()
+    }
+    
     func fetchPeople(){
         // fetch data from Core Data to display in tableview
         do {
-            self.items = try context.fetch(Person.fetchRequest())
+            let request = Person.fetchRequest() as NSFetchRequest<Person>
+            
+            //set FILTERING and shorting on request
+            //let pred = NSPredicate(format: "name CONTAINS %@","Milo")
+            //request.predicate = pred
+            
+            //set SORTING
+            let sort = NSSortDescriptor(key: "name", ascending: true)
+            request.sortDescriptors = [sort]
+            
+            self.items = try context.fetch(request)
             DispatchQueue.main.async {
                 self.table.reloadData()
             }
@@ -123,9 +148,19 @@ class ViewController: UIViewController {
                 //get the textfield for the alert
                 let textfield = alert.textFields![0]
                 
-                //todo: edit name property of person object
-                //todo: save the data
-                //todo: refetch the data
+                //edit name property of person object
+                person.name = textfield.text
+                
+                //save the data
+                do {
+                    try self.context.save()
+                }
+                catch {
+                    
+                }
+                //refetch the data
+                self.fetchPeople()
+                
             }
             //Add button
             alert.addAction(saveButton)

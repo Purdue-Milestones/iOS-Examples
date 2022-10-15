@@ -2,7 +2,7 @@
 //  Person+CoreDataProperties.swift
 //  CoreDataExample
 //
-//  Created by Carolina Solís on 10/14/22.
+//  Created by Carolina Solís on 10/15/22.
 //
 //
 
@@ -17,8 +17,9 @@ extension Person {
     }
 
     @NSManaged public var age: Int64
-    @NSManaged public var name: String?
     @NSManaged public var gender: String?
+    @NSManaged public var name: String?
+    @NSManaged public var family: Family?
 
 }
 
