@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MicrovestApp/HRValue+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:MicrovestApp/HRValue+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/carolinasolis/Documents/XCode Projects/iOS-App/MyA/MicrovestApp.xcodeproj">
    </FileRef>
    <FileRef
