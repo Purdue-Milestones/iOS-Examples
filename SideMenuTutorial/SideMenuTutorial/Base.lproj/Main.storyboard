@@ -47,14 +47,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="272" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-Rv-duX">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Emb-Rv-duX">
                                 <rect key="frame" x="0.0" y="0.0" width="272" height="143"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="143" id="5Wf-US-ODF"/>
                                 </constraints>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8qx-Tx-UZG">
-                                <rect key="frame" x="0.0" y="151" width="272" height="634"/>
+                                <rect key="frame" x="0.0" y="143" width="272" height="642"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6X-di-93T">
@@ -68,15 +68,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8qx-Tx-UZG" firstAttribute="leading" secondItem="M5X-4A-bvG" secondAttribute="leading" id="0bC-a2-5df"/>
-                            <constraint firstItem="Emb-Rv-duX" firstAttribute="leading" secondItem="M5X-4A-bvG" secondAttribute="leading" id="57l-1f-QTl"/>
                             <constraint firstItem="F6X-di-93T" firstAttribute="top" secondItem="8qx-Tx-UZG" secondAttribute="bottom" constant="41" id="5Jn-oN-Kv4"/>
-                            <constraint firstItem="Emb-Rv-duX" firstAttribute="trailing" secondItem="M5X-4A-bvG" secondAttribute="trailing" id="72G-wA-5x4"/>
-                            <constraint firstItem="8qx-Tx-UZG" firstAttribute="top" secondItem="Emb-Rv-duX" secondAttribute="bottom" constant="8" symbolic="YES" id="Fc1-5D-xFz"/>
+                            <constraint firstAttribute="trailing" secondItem="Emb-Rv-duX" secondAttribute="trailing" id="78a-WL-kKj"/>
+                            <constraint firstItem="8qx-Tx-UZG" firstAttribute="top" secondItem="Emb-Rv-duX" secondAttribute="bottom" id="Fc1-5D-xFz"/>
                             <constraint firstItem="8qx-Tx-UZG" firstAttribute="centerX" secondItem="1mf-sY-2y0" secondAttribute="centerX" id="GvM-T8-iRB"/>
                             <constraint firstItem="M5X-4A-bvG" firstAttribute="bottom" secondItem="8qx-Tx-UZG" secondAttribute="bottom" constant="77" id="Uru-yW-3AY"/>
                             <constraint firstItem="F6X-di-93T" firstAttribute="centerX" secondItem="1mf-sY-2y0" secondAttribute="centerX" id="bhR-3K-4QB"/>
                             <constraint firstItem="Emb-Rv-duX" firstAttribute="top" secondItem="1mf-sY-2y0" secondAttribute="top" id="tlF-dU-f5O"/>
                             <constraint firstItem="8qx-Tx-UZG" firstAttribute="trailing" secondItem="M5X-4A-bvG" secondAttribute="trailing" id="tmB-em-tBB"/>
+                            <constraint firstItem="Emb-Rv-duX" firstAttribute="leading" secondItem="1mf-sY-2y0" secondAttribute="leading" id="y8t-9r-Hbc"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="272" height="896"/>

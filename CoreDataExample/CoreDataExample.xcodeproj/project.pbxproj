@@ -17,6 +17,10 @@
 		7832ABC928FA2EFC00B43585 /* CoreDataExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832ABC828FA2EFC00B43585 /* CoreDataExampleTests.swift */; };
 		7832ABD328FA2EFC00B43585 /* CoreDataExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832ABD228FA2EFC00B43585 /* CoreDataExampleUITests.swift */; };
 		7832ABD528FA2EFC00B43585 /* CoreDataExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7832ABD428FA2EFC00B43585 /* CoreDataExampleUITestsLaunchTests.swift */; };
+		787E4B6828FADA990076A1A8 /* Person+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E4B6428FADA990076A1A8 /* Person+CoreDataClass.swift */; };
+		787E4B6928FADA990076A1A8 /* Person+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E4B6528FADA990076A1A8 /* Person+CoreDataProperties.swift */; };
+		787E4B6A28FADA990076A1A8 /* Family+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E4B6628FADA990076A1A8 /* Family+CoreDataClass.swift */; };
+		787E4B6B28FADA990076A1A8 /* Family+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787E4B6728FADA990076A1A8 /* Family+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		7832ABCE28FA2EFC00B43585 /* CoreDataExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7832ABD228FA2EFC00B43585 /* CoreDataExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExampleUITests.swift; sourceTree = "<group>"; };
 		7832ABD428FA2EFC00B43585 /* CoreDataExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		787E4B6428FADA990076A1A8 /* Person+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataClass.swift"; sourceTree = "<group>"; };
+		787E4B6528FADA990076A1A8 /* Person+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Person+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		787E4B6628FADA990076A1A8 /* Family+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataClass.swift"; sourceTree = "<group>"; };
+		787E4B6728FADA990076A1A8 /* Family+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Family+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		7832ABAD28FA2EF800B43585 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				7832ABE528FA315D00B43585 /* Model */,
 				7832ABAE28FA2EF800B43585 /* AppDelegate.swift */,
 				7832ABB028FA2EF800B43585 /* SceneDelegate.swift */,
 				7832ABB228FA2EF800B43585 /* ViewController.swift */,
@@ -128,6 +137,17 @@
 				7832ABD428FA2EFC00B43585 /* CoreDataExampleUITestsLaunchTests.swift */,
 			);
 			path = CoreDataExampleUITests;
+			sourceTree = "<group>";
+		};
+		7832ABE528FA315D00B43585 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				787E4B6428FADA990076A1A8 /* Person+CoreDataClass.swift */,
+				787E4B6528FADA990076A1A8 /* Person+CoreDataProperties.swift */,
+				787E4B6628FADA990076A1A8 /* Family+CoreDataClass.swift */,
+				787E4B6728FADA990076A1A8 /* Family+CoreDataProperties.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,8 +283,12 @@
 			files = (
 				7832ABB328FA2EF800B43585 /* ViewController.swift in Sources */,
 				7832ABAF28FA2EF800B43585 /* AppDelegate.swift in Sources */,
+				787E4B6A28FADA990076A1A8 /* Family+CoreDataClass.swift in Sources */,
+				787E4B6928FADA990076A1A8 /* Person+CoreDataProperties.swift in Sources */,
+				787E4B6828FADA990076A1A8 /* Person+CoreDataClass.swift in Sources */,
 				7832ABB128FA2EF800B43585 /* SceneDelegate.swift in Sources */,
 				7832ABB928FA2EF800B43585 /* CoreDataExample.xcdatamodeld in Sources */,
+				787E4B6B28FADA990076A1A8 /* Family+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

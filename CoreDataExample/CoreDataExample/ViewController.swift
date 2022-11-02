@@ -74,7 +74,7 @@ class ViewController: UIViewController {
     let alert = UIAlertController(title: "Add Person", message: "What is their name?", preferredStyle: .alert)
     alert.addTextField()
     
-    //configure button ha fndler
+    //configure button handler
     let submitButton = UIAlertAction(title: "Submit", style: .default){ (action) in
         // get the text field for the alert
         let textfield = alert.textFields![0]
@@ -109,7 +109,7 @@ class ViewController: UIViewController {
     }
     
 
-    }
+}
 
    
     

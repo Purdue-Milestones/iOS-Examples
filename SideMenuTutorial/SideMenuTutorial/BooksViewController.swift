@@ -17,5 +17,6 @@ class BooksViewController: UIViewController{
 
            sideMenuBtn.target = revealViewController()
            sideMenuBtn.action = #selector(revealViewController()?.revealSideMenu)
+        self.sideMenuBtn.tintColor = .black
        }
 }

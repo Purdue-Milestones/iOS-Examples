@@ -38,7 +38,7 @@ class SideMenuViewController: UIViewController {
         // TableView
         self.sideMenuTableView.delegate = self
         self.sideMenuTableView.dataSource = self
-        self.sideMenuTableView.backgroundColor =   #colorLiteral(red: 0.737254902, green: 0.1294117647, blue: 0.2941176471, alpha: 1)
+        self.sideMenuTableView.backgroundColor =   #colorLiteral(red: 0.9409657121, green: 0.8277415633, blue: 0.9443354607, alpha: 1)
         self.sideMenuTableView.separatorStyle = .none
         
         // Set Highlighted Cell
@@ -46,10 +46,12 @@ class SideMenuViewController: UIViewController {
             let defaultRow = IndexPath(row: self.defaultHighlightedCell, section: 0)
                 self.sideMenuTableView.selectRow(at: defaultRow, animated: false, scrollPosition: .none)
                 }
+        //Image
+        headerImageView.image = UIImage(named:"purplenotes.jpg")
 
         // Footer
         self.footerLabel.textColor = UIColor.black
-        self.footerLabel.font = UIFont.systemFont(ofSize: 12, weight: .bold)
+        self.footerLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         self.footerLabel.text = "Developed by Caro"
 
         // Register TableView Cell
@@ -85,7 +87,7 @@ class SideMenuViewController: UIViewController {
 
         // Highlighted color
             let myCustomSelectionColorView = UIView()
-            myCustomSelectionColorView.backgroundColor =   #colorLiteral(red: 0.6196078431, green: 0.1098039216, blue: 0.2509803922, alpha: 1)
+            myCustomSelectionColorView.backgroundColor =   #colorLiteral(red: 0.9409657121, green: 0.8277415633, blue: 0.9443354607, alpha: 1)
             cell.selectedBackgroundView = myCustomSelectionColorView
             return cell
     }
