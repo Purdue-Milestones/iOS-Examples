@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C68FE2027EFEF0400FB817E /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68FE1F27EFEF0400FB817E /* SingletonClass.swift */; };
 		11B9FADD43CD6032202D590F /* Pods_MicrovestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FE101E76D631266ADA2C85 /* Pods_MicrovestApp.framework */; };
+		78007AC02912F20800350AA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78007ABF2912F20800350AA3 /* Main.storyboard */; };
 		782F31B527A23688001670AF /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B427A23688001670AF /* SideMenuModel.swift */; };
 		782F31B727A2DDB6001670AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B627A2DDB6001670AF /* HomeViewController.swift */; };
 		782F31B927A2E596001670AF /* ECGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B827A2E596001670AF /* ECGViewController.swift */; };
@@ -22,7 +23,6 @@
 		783D929B27A21A240074CCEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D929A27A21A240074CCEF /* AppDelegate.swift */; };
 		783D929D27A21A240074CCEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D929C27A21A240074CCEF /* SceneDelegate.swift */; };
 		783D929F27A21A240074CCEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D929E27A21A240074CCEF /* ViewController.swift */; };
-		783D92A227A21A240074CCEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783D92A027A21A240074CCEF /* Main.storyboard */; };
 		783D92A427A21A270074CCEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 783D92A327A21A270074CCEF /* Assets.xcassets */; };
 		783D92A727A21A270074CCEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783D92A527A21A270074CCEF /* LaunchScreen.storyboard */; };
 		783D92B227A21A270074CCEF /* MicrovestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D92B127A21A270074CCEF /* MicrovestAppTests.swift */; };
@@ -60,6 +60,7 @@
 		241A649FBBBFD738F3492AAE /* Pods_MicrovestApp_MicrovestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrovestApp_MicrovestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2824F5D113C8646269D6D4A3 /* Pods-MicrovestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrovestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MicrovestAppTests/Pods-MicrovestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB4AA89664DD10CDA9635AF /* Pods-MicrovestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrovestApp.release.xcconfig"; path = "Target Support Files/Pods-MicrovestApp/Pods-MicrovestApp.release.xcconfig"; sourceTree = "<group>"; };
+		78007ABF2912F20800350AA3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		782F31B427A23688001670AF /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		782F31B627A2DDB6001670AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		782F31B827A2E596001670AF /* ECGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGViewController.swift; sourceTree = "<group>"; };
@@ -74,7 +75,6 @@
 		783D929A27A21A240074CCEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783D929C27A21A240074CCEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		783D929E27A21A240074CCEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		783D92A127A21A240074CCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		783D92A327A21A270074CCEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		783D92A627A21A270074CCEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		783D92A827A21A270074CCEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 				783D929A27A21A240074CCEF /* AppDelegate.swift */,
 				783D929C27A21A240074CCEF /* SceneDelegate.swift */,
 				783D929E27A21A240074CCEF /* ViewController.swift */,
-				783D92A027A21A240074CCEF /* Main.storyboard */,
+				78007ABF2912F20800350AA3 /* Main.storyboard */,
 				78346B1C27B968EA0074579E /* InfoViewController.swift */,
 				783D92DA27A2327B0074CCEF /* SideMenuCell.swift */,
 				783D92DB27A2327B0074CCEF /* SideMenuCell.xib */,
@@ -325,8 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				783D92A727A21A270074CCEF /* LaunchScreen.storyboard in Resources */,
+				78007AC02912F20800350AA3 /* Main.storyboard in Resources */,
 				783D92A427A21A270074CCEF /* Assets.xcassets in Resources */,
-				783D92A227A21A240074CCEF /* Main.storyboard in Resources */,
 				783D92DD27A2327B0074CCEF /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,14 +508,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		783D92A027A21A240074CCEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				783D92A127A21A240074CCEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		783D92A527A21A270074CCEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
