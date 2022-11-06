@@ -1,6 +1,0 @@
-framework module Pods_MicrovestApp_MicrovestAppUITests {
-  umbrella header "Pods-MicrovestApp-MicrovestAppUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
