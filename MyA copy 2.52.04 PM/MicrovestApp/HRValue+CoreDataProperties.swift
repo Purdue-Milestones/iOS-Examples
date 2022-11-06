@@ -2,7 +2,7 @@
 //  HRValue+CoreDataProperties.swift
 //  
 //
-//  Created by Carolina Solís on 11/2/22.
+//  Created by Carolina Solís on 11/6/22.
 //
 //
 

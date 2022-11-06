@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		0C68FE2027EFEF0400FB817E /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C68FE1F27EFEF0400FB817E /* SingletonClass.swift */; };
 		11B9FADD43CD6032202D590F /* Pods_MicrovestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FE101E76D631266ADA2C85 /* Pods_MicrovestApp.framework */; };
-		78007AB52912BB3100350AA3 /* HRValue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78007AB42912BB3100350AA3 /* HRValue+CoreDataProperties.swift */; };
-		78007AB72912BB3400350AA3 /* HRValue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78007AB62912BB3400350AA3 /* HRValue+CoreDataClass.swift */; };
+		7814371829186E8400603042 /* HRValue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814371629186E8400603042 /* HRValue+CoreDataClass.swift */; };
+		7814371929186E8400603042 /* HRValue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814371729186E8400603042 /* HRValue+CoreDataProperties.swift */; };
 		782F31B527A23688001670AF /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B427A23688001670AF /* SideMenuModel.swift */; };
 		782F31B727A2DDB6001670AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B627A2DDB6001670AF /* HomeViewController.swift */; };
 		782F31B927A2E596001670AF /* ECGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F31B827A2E596001670AF /* ECGViewController.swift */; };
@@ -64,8 +64,8 @@
 		241A649FBBBFD738F3492AAE /* Pods_MicrovestApp_MicrovestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicrovestApp_MicrovestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2824F5D113C8646269D6D4A3 /* Pods-MicrovestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrovestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-MicrovestAppTests/Pods-MicrovestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DB4AA89664DD10CDA9635AF /* Pods-MicrovestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MicrovestApp.release.xcconfig"; path = "Target Support Files/Pods-MicrovestApp/Pods-MicrovestApp.release.xcconfig"; sourceTree = "<group>"; };
-		78007AB42912BB3100350AA3 /* HRValue+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HRValue+CoreDataProperties.swift"; path = "MicrovestApp/HRValue+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		78007AB62912BB3400350AA3 /* HRValue+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "HRValue+CoreDataClass.swift"; path = "/Users/carolinasolis/Documents/XCode Projects/iOS-App/MyA/MicrovestApp/Model/HRValue+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		7814371629186E8400603042 /* HRValue+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HRValue+CoreDataClass.swift"; path = "MicrovestApp/HRValue+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		7814371729186E8400603042 /* HRValue+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "HRValue+CoreDataProperties.swift"; path = "MicrovestApp/HRValue+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		782F31B427A23688001670AF /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
 		782F31B627A2DDB6001670AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		782F31B827A2E596001670AF /* ECGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGViewController.swift; sourceTree = "<group>"; };
@@ -217,8 +217,8 @@
 		7894D17529063D23007ABD0E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				78007AB62912BB3400350AA3 /* HRValue+CoreDataClass.swift */,
-				78007AB42912BB3100350AA3 /* HRValue+CoreDataProperties.swift */,
+				7814371629186E8400603042 /* HRValue+CoreDataClass.swift */,
+				7814371729186E8400603042 /* HRValue+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -478,7 +478,6 @@
 				782F31B527A23688001670AF /* SideMenuModel.swift in Sources */,
 				7894D17429063A65007ABD0E /* MicrovestApp2.xcdatamodeld in Sources */,
 				782F31BF27A2E831001670AF /* RespirationViewController.swift in Sources */,
-				78007AB52912BB3100350AA3 /* HRValue+CoreDataProperties.swift in Sources */,
 				783D92D527A21DB90074CCEF /* SideMenuViewController.swift in Sources */,
 				782F31BD27A2E812001670AF /* EDAViewController.swift in Sources */,
 				78346B1D27B968EB0074579E /* InfoViewController.swift in Sources */,
@@ -486,15 +485,16 @@
 				783D92D727A21DC40074CCEF /* MainViewController.swift in Sources */,
 				782F31B727A2DDB6001670AF /* HomeViewController.swift in Sources */,
 				782F31B927A2E596001670AF /* ECGViewController.swift in Sources */,
-				78007AB72912BB3400350AA3 /* HRValue+CoreDataClass.swift in Sources */,
 				783D929F27A21A240074CCEF /* ViewController.swift in Sources */,
 				783D92DC27A2327B0074CCEF /* SideMenuCell.swift in Sources */,
+				7814371929186E8400603042 /* HRValue+CoreDataProperties.swift in Sources */,
 				78346B1F27B96F640074579E /* VideoViewController.swift in Sources */,
 				782F31C327A2E843001670AF /* LocomotionViewController.swift in Sources */,
 				783D929B27A21A240074CCEF /* AppDelegate.swift in Sources */,
 				78E1C55528161691004D6994 /* TempViewController.swift in Sources */,
 				782F31BB27A2E5A0001670AF /* EMGViewController.swift in Sources */,
 				783D929D27A21A240074CCEF /* SceneDelegate.swift in Sources */,
+				7814371829186E8400603042 /* HRValue+CoreDataClass.swift in Sources */,
 				788DD20A290D92CC00D4B3AD /* StoredDataViewController.swift in Sources */,
 				782F31C127A2E83B001670AF /* AudioViewController.swift in Sources */,
 			);
