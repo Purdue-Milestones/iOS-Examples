@@ -1,0 +1,6 @@
+framework module Pods_CoreDataBLETutorial {
+  umbrella header "Pods-CoreDataBLETutorial-umbrella.h"
+
+  export *
+  module * { export * }
+}
