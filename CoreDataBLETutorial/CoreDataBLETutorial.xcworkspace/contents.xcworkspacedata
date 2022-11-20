@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HRValue+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:HRValue+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:CoreDataBLETutorial.xcodeproj">
    </FileRef>
    <FileRef

@@ -21,6 +21,7 @@ class ECGViewController: UIViewController{
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     //data for table
     var items:[HRValue]?
+    let defaults = UserDefaults.standard //UserDefaults for data storage
 
     
     //Variable initialization
@@ -31,7 +32,7 @@ class ECGViewController: UIViewController{
     
     var showGraphIsOn = true
     
-    let defaults = UserDefaults.standard //UserDefaults for data storage
+   
     
     
     //Initialize chart, label, and side menu button variables

@@ -33,6 +33,7 @@
 		783D92D727A21DC40074CCEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D92D627A21DC40074CCEF /* MainViewController.swift */; };
 		783D92DC27A2327B0074CCEF /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D92DA27A2327B0074CCEF /* SideMenuCell.swift */; };
 		783D92DD27A2327B0074CCEF /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 783D92DB27A2327B0074CCEF /* SideMenuCell.xib */; };
+		7889D29B2929A5CC004C0B8E /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7889D29A2929A5CC004C0B8E /* HelpViewController.swift */; };
 		788DD20A290D92CC00D4B3AD /* StoredDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788DD209290D92CB00D4B3AD /* StoredDataViewController.swift */; };
 		7894D17429063A65007ABD0E /* MicrovestApp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7894D17229063A65007ABD0E /* MicrovestApp2.xcdatamodeld */; };
 		78E1C55528161691004D6994 /* TempViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1C55428161691004D6994 /* TempViewController.swift */; };
@@ -94,6 +95,7 @@
 		783D92D627A21DC40074CCEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		783D92DA27A2327B0074CCEF /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
 		783D92DB27A2327B0074CCEF /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		7889D29A2929A5CC004C0B8E /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		788DD209290D92CB00D4B3AD /* StoredDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredDataViewController.swift; sourceTree = "<group>"; };
 		7894D17329063A65007ABD0E /* MicrovestApp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MicrovestApp2.xcdatamodel; sourceTree = "<group>"; };
 		78E1C55428161691004D6994 /* TempViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempViewController.swift; sourceTree = "<group>"; };
@@ -171,12 +173,12 @@
 				783D929C27A21A240074CCEF /* SceneDelegate.swift */,
 				783D929E27A21A240074CCEF /* ViewController.swift */,
 				783D92A027A21A240074CCEF /* Main.storyboard */,
+				783D92D627A21DC40074CCEF /* MainViewController.swift */,
 				78346B1C27B968EA0074579E /* InfoViewController.swift */,
 				783D92DA27A2327B0074CCEF /* SideMenuCell.swift */,
+				782F31B427A23688001670AF /* SideMenuModel.swift */,
 				783D92DB27A2327B0074CCEF /* SideMenuCell.xib */,
 				783D92D427A21DB80074CCEF /* SideMenuViewController.swift */,
-				783D92D627A21DC40074CCEF /* MainViewController.swift */,
-				782F31B427A23688001670AF /* SideMenuModel.swift */,
 				782F31B627A2DDB6001670AF /* HomeViewController.swift */,
 				782F31B827A2E596001670AF /* ECGViewController.swift */,
 				782F31BE27A2E831001670AF /* RespirationViewController.swift */,
@@ -187,6 +189,7 @@
 				782F31C027A2E83B001670AF /* AudioViewController.swift */,
 				78346B1E27B96F640074579E /* VideoViewController.swift */,
 				788DD209290D92CB00D4B3AD /* StoredDataViewController.swift */,
+				7889D29A2929A5CC004C0B8E /* HelpViewController.swift */,
 				783D92A327A21A270074CCEF /* Assets.xcassets */,
 				783D92A527A21A270074CCEF /* LaunchScreen.storyboard */,
 				783D92A827A21A270074CCEF /* Info.plist */,
@@ -496,6 +499,7 @@
 				783D929D27A21A240074CCEF /* SceneDelegate.swift in Sources */,
 				7814371829186E8400603042 /* HRValue+CoreDataClass.swift in Sources */,
 				788DD20A290D92CC00D4B3AD /* StoredDataViewController.swift in Sources */,
+				7889D29B2929A5CC004C0B8E /* HelpViewController.swift in Sources */,
 				782F31C127A2E83B001670AF /* AudioViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

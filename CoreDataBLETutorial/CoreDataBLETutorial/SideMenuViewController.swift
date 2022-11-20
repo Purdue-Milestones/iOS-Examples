@@ -1,10 +1,11 @@
 //
 //  SideMenuViewController.swift
-//  MicrovestApp
+//  CoreDataBLETutorial
 //
-//  Created by Carolina Solís on 1/26/22.
+//  Created by Carolina Solís on 11/6/22.
 //
 
+import Foundation
 import UIKit
 
 protocol SideMenuViewControllerDelegate {
@@ -14,25 +15,19 @@ protocol SideMenuViewControllerDelegate {
 class SideMenuViewController: UIViewController {
     var delegate: SideMenuViewControllerDelegate?
     
+   
     @IBOutlet weak var headerImageView: UIImageView!
+   
     @IBOutlet weak var sideMenuTableView: UITableView!
     @IBOutlet weak var footerLabel: UILabel!
+    
     
     var defaultHighlightedCell: Int = 0
     
     //choose icons for side menu and asign to corresponding VC
     var menu: [SideMenuModel] = [
         SideMenuModel(icon: UIImage(systemName: "house.fill")!, title: "Home"),
-                SideMenuModel(icon: UIImage(systemName: "heart.fill")!, title: "ECG"),
-                SideMenuModel(icon: UIImage(systemName: "lungs.fill")!, title: "Respiration"),
-                SideMenuModel(icon: UIImage(systemName: "thermometer.sun.fill")!, title: "Temperature"),
-                SideMenuModel(icon: UIImage(systemName: "figure.wave")!, title: "EMG"),
-                SideMenuModel(icon: UIImage(named: "brain")!, title: "EDA"),SideMenuModel(icon: UIImage(systemName: "figure.walk")!, title: "Locomotion"),
-                SideMenuModel(icon: UIImage(systemName: "headphones")!, title: "Audio"),
-                SideMenuModel(icon: UIImage(systemName: "video.fill")!, title: "Video"),
-                SideMenuModel(icon: UIImage(systemName: "info.circle")!, title: "Help"),
-                SideMenuModel(icon: UIImage(systemName: "book.fill")!, title: "About"),
-        SideMenuModel(icon: UIImage(systemName: "table.fill")!, title: "Stored Data") //ADDED STORED DATA VC
+                SideMenuModel(icon: UIImage(systemName: "heart.fill")!, title: "ECG"),SideMenuModel(icon: UIImage(systemName: "table.fill")!, title: "HR Table")
     ]
     
     //set up how side menu looks like

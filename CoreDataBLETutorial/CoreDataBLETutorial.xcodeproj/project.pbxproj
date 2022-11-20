@@ -9,13 +9,24 @@
 /* Begin PBXBuildFile section */
 		7814372729187B3800603042 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814372629187B3800603042 /* AppDelegate.swift */; };
 		7814372929187B3800603042 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814372829187B3800603042 /* SceneDelegate.swift */; };
-		7814372B29187B3800603042 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814372A29187B3800603042 /* ViewController.swift */; };
+		7814372B29187B3800603042 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814372A29187B3800603042 /* MainViewController.swift */; };
 		7814372E29187B3800603042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7814372C29187B3800603042 /* Main.storyboard */; };
 		7814373029187B3900603042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7814372F29187B3900603042 /* Assets.xcassets */; };
 		7814373329187B3900603042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7814373129187B3900603042 /* LaunchScreen.storyboard */; };
 		7814373E29187B3A00603042 /* CoreDataBLETutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814373D29187B3A00603042 /* CoreDataBLETutorialTests.swift */; };
 		7814374829187B3A00603042 /* CoreDataBLETutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814374729187B3A00603042 /* CoreDataBLETutorialUITests.swift */; };
 		7814374A29187B3A00603042 /* CoreDataBLETutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814374929187B3A00603042 /* CoreDataBLETutorialUITestsLaunchTests.swift */; };
+		781437572918A1D700603042 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781437562918A1D600603042 /* SideMenuViewController.swift */; };
+		781437592918A24300603042 /* SideMenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781437582918A24300603042 /* SideMenuModel.swift */; };
+		7814375B2918A27100603042 /* SideMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7814375A2918A27100603042 /* SideMenuCell.xib */; };
+		7814375D2918A29A00603042 /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814375C2918A29A00603042 /* SideMenuCell.swift */; };
+		7814375F2918A8A500603042 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814375E2918A8A500603042 /* HomeViewController.swift */; };
+		78143761291942E100603042 /* SingletonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78143760291942E000603042 /* SingletonClass.swift */; };
+		781437632919449B00603042 /* HRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781437622919449B00603042 /* HRViewController.swift */; };
+		7814376929199CB400603042 /* CoreDataBLETutorial.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7814376729199CB400603042 /* CoreDataBLETutorial.xcdatamodeld */; };
+		7814377029199D9600603042 /* HRTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7814376F29199D9500603042 /* HRTableViewController.swift */; };
+		781437772919A77600603042 /* HRValue+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781437752919A77500603042 /* HRValue+CoreDataClass.swift */; };
+		781437782919A77600603042 /* HRValue+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781437762919A77600603042 /* HRValue+CoreDataProperties.swift */; };
 		AF03F5DE6C30D75FAF936B2B /* Pods_CoreDataBLETutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9705EB7748BF5E64FE71D7FC /* Pods_CoreDataBLETutorial.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,7 +51,7 @@
 		7814372329187B3800603042 /* CoreDataBLETutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataBLETutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7814372629187B3800603042 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7814372829187B3800603042 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7814372A29187B3800603042 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7814372A29187B3800603042 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7814372D29187B3800603042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7814372F29187B3900603042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7814373229187B3900603042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +61,17 @@
 		7814374329187B3A00603042 /* CoreDataBLETutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataBLETutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7814374729187B3A00603042 /* CoreDataBLETutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBLETutorialUITests.swift; sourceTree = "<group>"; };
 		7814374929187B3A00603042 /* CoreDataBLETutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBLETutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		781437562918A1D600603042 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		781437582918A24300603042 /* SideMenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuModel.swift; sourceTree = "<group>"; };
+		7814375A2918A27100603042 /* SideMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuCell.xib; sourceTree = "<group>"; };
+		7814375C2918A29A00603042 /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		7814375E2918A8A500603042 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		78143760291942E000603042 /* SingletonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonClass.swift; sourceTree = "<group>"; };
+		781437622919449B00603042 /* HRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRViewController.swift; sourceTree = "<group>"; };
+		7814376829199CB400603042 /* CoreDataBLETutorial.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataBLETutorial.xcdatamodel; sourceTree = "<group>"; };
+		7814376F29199D9500603042 /* HRTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HRTableViewController.swift; sourceTree = "<group>"; };
+		781437752919A77500603042 /* HRValue+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRValue+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		781437762919A77600603042 /* HRValue+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRValue+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		9705EB7748BF5E64FE71D7FC /* Pods_CoreDataBLETutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreDataBLETutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		985C5C99D54805E5364E0216 /* Pods-CoreDataBLETutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBLETutorial.release.xcconfig"; path = "Target Support Files/Pods-CoreDataBLETutorial/Pods-CoreDataBLETutorial.release.xcconfig"; sourceTree = "<group>"; };
 		B7562EC38CAE0F2182CC0A1D /* Pods-CoreDataBLETutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreDataBLETutorial.debug.xcconfig"; path = "Target Support Files/Pods-CoreDataBLETutorial/Pods-CoreDataBLETutorial.debug.xcconfig"; sourceTree = "<group>"; };
@@ -114,13 +136,23 @@
 		7814372529187B3800603042 /* CoreDataBLETutorial */ = {
 			isa = PBXGroup;
 			children = (
+				7814376A29199CFC00603042 /* Model */,
 				7814372629187B3800603042 /* AppDelegate.swift */,
 				7814372829187B3800603042 /* SceneDelegate.swift */,
-				7814372A29187B3800603042 /* ViewController.swift */,
+				7814372A29187B3800603042 /* MainViewController.swift */,
+				781437562918A1D600603042 /* SideMenuViewController.swift */,
+				781437582918A24300603042 /* SideMenuModel.swift */,
+				7814375C2918A29A00603042 /* SideMenuCell.swift */,
+				7814375E2918A8A500603042 /* HomeViewController.swift */,
+				781437622919449B00603042 /* HRViewController.swift */,
+				7814376F29199D9500603042 /* HRTableViewController.swift */,
+				7814375A2918A27100603042 /* SideMenuCell.xib */,
 				7814372C29187B3800603042 /* Main.storyboard */,
+				7814376729199CB400603042 /* CoreDataBLETutorial.xcdatamodeld */,
 				7814372F29187B3900603042 /* Assets.xcassets */,
 				7814373129187B3900603042 /* LaunchScreen.storyboard */,
 				7814373429187B3900603042 /* Info.plist */,
+				78143760291942E000603042 /* SingletonClass.swift */,
 			);
 			path = CoreDataBLETutorial;
 			sourceTree = "<group>";
@@ -142,13 +174,21 @@
 			path = CoreDataBLETutorialUITests;
 			sourceTree = "<group>";
 		};
+		7814376A29199CFC00603042 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				781437752919A77500603042 /* HRValue+CoreDataClass.swift */,
+				781437762919A77600603042 /* HRValue+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		BE5FF763C9067B1210B4E5F3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				B7562EC38CAE0F2182CC0A1D /* Pods-CoreDataBLETutorial.debug.xcconfig */,
 				985C5C99D54805E5364E0216 /* Pods-CoreDataBLETutorial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -261,6 +301,7 @@
 				7814373329187B3900603042 /* LaunchScreen.storyboard in Resources */,
 				7814373029187B3900603042 /* Assets.xcassets in Resources */,
 				7814372E29187B3800603042 /* Main.storyboard in Resources */,
+				7814375B2918A27100603042 /* SideMenuCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +368,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7814372B29187B3800603042 /* ViewController.swift in Sources */,
+				78143761291942E100603042 /* SingletonClass.swift in Sources */,
+				781437572918A1D700603042 /* SideMenuViewController.swift in Sources */,
+				7814376929199CB400603042 /* CoreDataBLETutorial.xcdatamodeld in Sources */,
+				7814377029199D9600603042 /* HRTableViewController.swift in Sources */,
+				7814372B29187B3800603042 /* MainViewController.swift in Sources */,
+				781437782919A77600603042 /* HRValue+CoreDataProperties.swift in Sources */,
 				7814372729187B3800603042 /* AppDelegate.swift in Sources */,
+				781437632919449B00603042 /* HRViewController.swift in Sources */,
 				7814372929187B3800603042 /* SceneDelegate.swift in Sources */,
+				781437592918A24300603042 /* SideMenuModel.swift in Sources */,
+				781437772919A77600603042 /* HRValue+CoreDataClass.swift in Sources */,
+				7814375F2918A8A500603042 /* HomeViewController.swift in Sources */,
+				7814375D2918A29A00603042 /* SideMenuCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +563,8 @@
 				DEVELOPMENT_TEAM = WLD7HPQ299;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataBLETutorial/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -541,6 +594,8 @@
 				DEVELOPMENT_TEAM = WLD7HPQ299;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreDataBLETutorial/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -675,6 +730,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7814376729199CB400603042 /* CoreDataBLETutorial.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7814376829199CB400603042 /* CoreDataBLETutorial.xcdatamodel */,
+			);
+			currentVersion = 7814376829199CB400603042 /* CoreDataBLETutorial.xcdatamodel */;
+			path = CoreDataBLETutorial.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7814371B29187B3800603042 /* Project object */;
 }

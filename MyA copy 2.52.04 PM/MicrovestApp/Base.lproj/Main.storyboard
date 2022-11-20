@@ -1237,7 +1237,7 @@
         <!--Help-->
         <scene sceneID="MZF-PS-RsH">
             <objects>
-                <viewController title="Help" id="P4z-d4-vMR" customClass="VideoViewController" customModule="MicrovestApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Help" id="P4z-d4-vMR" customClass="HelpViewController" customModule="MicrovestApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QbJ-qx-dNc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1249,20 +1249,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact: orlandohoilett@purdue.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-Gr-YRO">
-                                <rect key="frame" x="68.5" y="437.5" width="277" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orlandohoilett@purdue.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-Gr-YRO">
+                                <rect key="frame" x="103.5" y="516" width="207.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-Oo-Tnh">
+                                <rect key="frame" x="127" y="423" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="73u-Ir-Wm5"/>
+                                    <constraint firstAttribute="width" constant="160" id="MXg-eO-TvO"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="CONTACT">
+                                            <attributes>
+                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="contactButton:" destination="P4z-d4-vMR" eventType="touchUpInside" id="P3V-wk-LlA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rCG-Gd-JqV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sXV-Yt-WJT" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="AZW-Jh-vq4"/>
                             <constraint firstItem="sXV-Yt-WJT" firstAttribute="centerY" secondItem="QbJ-qx-dNc" secondAttribute="centerY" constant="-250" id="Aw4-cn-YaR"/>
-                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="centerY" secondItem="QbJ-qx-dNc" secondAttribute="centerY" id="YnZ-Hb-TqO"/>
+                            <constraint firstItem="gYG-Oo-Tnh" firstAttribute="centerY" secondItem="QbJ-qx-dNc" secondAttribute="centerY" id="Ecw-aE-5Dm"/>
+                            <constraint firstItem="gYG-Oo-Tnh" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="PTa-tQ-Niu"/>
                             <constraint firstItem="0hS-Gr-YRO" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="ZZj-KW-r7P"/>
+                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="top" secondItem="sXV-Yt-WJT" secondAttribute="bottom" constant="300" id="gSI-Ft-nug"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -1271,7 +1293,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="sideMenuBtn" destination="gEF-BW-Hfk" id="Xfa-yK-nyO"/>
+                        <outlet property="sideMenuBtn" destination="gEF-BW-Hfk" id="6HI-f0-f1a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8n-tf-v5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
