@@ -1194,12 +1194,73 @@
                                     <action selector="videoSwitch:" destination="4ZE-ez-39d" eventType="valueChanged" id="yFl-mO-RDC"/>
                                 </connections>
                             </switch>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="8YT-oO-5Dt">
+                                <rect key="frame" x="91.5" y="421.5" width="231" height="53"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="video.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="iL4-Id-7Q1">
+                                        <rect key="frame" x="0.0" y="0.5" width="50" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="hQ0-VI-X7G"/>
+                                            <constraint firstAttribute="height" constant="53" id="mAe-bM-YYq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRR-2Q-Qd2">
+                                        <rect key="frame" x="80" y="0.0" width="151" height="53"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Record Video">
+                                                    <attributes>
+                                                        <font key="NSFont" size="21" name="Helvetica"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="recordAct:" destination="4ZE-ez-39d" eventType="touchUpInside" id="qE1-4U-3Tq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="BBR-H2-50H">
+                                <rect key="frame" x="98.5" y="528" width="217.5" height="53"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="play.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tNb-HS-QKd">
+                                        <rect key="frame" x="0.0" y="0.5" width="50" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="53" id="Aqs-ex-GZq"/>
+                                            <constraint firstAttribute="width" constant="50" id="KUS-Fx-px4"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fSr-Gq-Er4">
+                                        <rect key="frame" x="93" y="0.0" width="124.5" height="53"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Play Video">
+                                                    <attributes>
+                                                        <font key="NSFont" size="21" name="Helvetica"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="playAct:" destination="4ZE-ez-39d" eventType="touchUpInside" id="qDp-9r-UP6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K90-Ii-Ub7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eII-6C-g0L" firstAttribute="top" secondItem="K90-Ii-Ub7" secondAttribute="top" constant="15" id="AVh-z9-OPR"/>
+                            <constraint firstItem="BBR-H2-50H" firstAttribute="centerX" secondItem="vLO-mP-FRm" secondAttribute="centerX" id="HMK-3I-un5"/>
+                            <constraint firstItem="BBR-H2-50H" firstAttribute="top" secondItem="8YT-oO-5Dt" secondAttribute="bottom" constant="53.5" id="WIM-yP-yz3"/>
+                            <constraint firstItem="8YT-oO-5Dt" firstAttribute="top" secondItem="wei-W3-DBP" secondAttribute="bottom" constant="205.5" id="eMo-ai-ZeB"/>
                             <constraint firstItem="wei-W3-DBP" firstAttribute="centerX" secondItem="vLO-mP-FRm" secondAttribute="centerX" id="hQM-4H-51G"/>
+                            <constraint firstItem="8YT-oO-5Dt" firstAttribute="centerX" secondItem="vLO-mP-FRm" secondAttribute="centerX" id="kUl-yC-pQv"/>
                             <constraint firstItem="K90-Ii-Ub7" firstAttribute="trailing" secondItem="eII-6C-g0L" secondAttribute="trailing" constant="40" id="yXL-u9-0R7"/>
                             <constraint firstItem="wei-W3-DBP" firstAttribute="centerY" secondItem="vLO-mP-FRm" secondAttribute="centerY" constant="-250" id="z9E-8k-Nju"/>
                         </constraints>
@@ -1607,7 +1668,9 @@ https://cocoacasts.com/ what-is-a-singleton -and-how-to-create-one-in-swift�
         <image name="figure.stand" catalog="system" width="77" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lungs.fill" catalog="system" width="128" height="92"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="video.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

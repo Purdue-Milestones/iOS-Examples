@@ -24,6 +24,12 @@
 	<true/>
 	<key>NSBluetoothAlwaysUsageDescription</key>
 	<string>Our app uses bluetooth to find, connect and transfer data between different devices</string>
+	<key>NSCameraUsageDescription</key>
+	<string>$(PRODUCT_NAME) use Camera</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>$(PRODUCT_NAME) use Mic</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>$(PRODUCT_NAME) use Lib</string>
 	<key>Privacy - Peripheral Usage Description</key>
 	<string></string>
 	<key>UIApplicationSceneManifest</key>
