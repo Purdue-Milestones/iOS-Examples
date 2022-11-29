@@ -1303,31 +1303,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-Yt-WJT" userLabel="Real Time HR">
-                                <rect key="frame" x="174.5" y="180" width="65.5" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-Yt-WJT">
+                                <rect key="frame" x="150.5" y="180" width="113" height="36"/>
                                 <accessibility key="accessibilityConfiguration" label="Real Time Heart Rate"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orlandohoilett@purdue.edu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-Gr-YRO">
-                                <rect key="frame" x="103.5" y="516" width="207.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYG-Oo-Tnh">
-                                <rect key="frame" x="127" y="423" width="160" height="50"/>
+                                <rect key="frame" x="92" y="362" width="230" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="73u-Ir-Wm5"/>
-                                    <constraint firstAttribute="width" constant="160" id="MXg-eO-TvO"/>
+                                    <constraint firstAttribute="height" constant="70" id="73u-Ir-Wm5"/>
+                                    <constraint firstAttribute="width" constant="230" id="MXg-eO-TvO"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled">
+                                <buttonConfiguration key="configuration" style="filled" image="envelope.fill" catalog="system">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="CONTACT">
+                                        <fragment content="MAIL">
                                             <attributes>
-                                                <font key="NSFont" size="21" name="Helvetica-Bold"/>
+                                                <font key="NSFont" size="35" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
@@ -1336,16 +1331,50 @@
                                     <action selector="contactButton:" destination="P4z-d4-vMR" eventType="touchUpInside" id="P3V-wk-LlA"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnr-u6-iqg">
+                                <rect key="frame" x="92" y="482" width="230" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Wqn-OS-lFP"/>
+                                    <constraint firstAttribute="width" constant="230" id="hV6-Qa-5RZ"/>
+                                </constraints>
+                                <state key="normal" title="Button" backgroundImage="message.fill" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" image="message.fill" catalog="system">
+                                    <backgroundConfiguration key="background"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="MESSAGE">
+                                            <attributes>
+                                                <font key="NSFont" size="35" name="HelveticaNeue-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sendMessage:" destination="P4z-d4-vMR" eventType="touchUpInside" id="Zew-FH-Mwm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="orlandohoilett@purdue.edu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hS-Gr-YRO">
+                                <rect key="frame" x="103.5" y="241" width="207.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="SUa-dr-CjN"/>
+                                    <constraint firstAttribute="width" constant="207.5" id="grf-1X-Ejz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rCG-Gd-JqV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="top" secondItem="sXV-Yt-WJT" secondAttribute="bottom" constant="25" id="0aC-Mk-GyB"/>
+                            <constraint firstItem="gYG-Oo-Tnh" firstAttribute="top" secondItem="0hS-Gr-YRO" secondAttribute="bottom" constant="100" id="2fL-sD-blP"/>
+                            <constraint firstItem="rnr-u6-iqg" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="5m5-wW-ET9"/>
+                            <constraint firstItem="rnr-u6-iqg" firstAttribute="top" secondItem="gYG-Oo-Tnh" secondAttribute="bottom" constant="50" id="7We-Ee-I65"/>
                             <constraint firstItem="sXV-Yt-WJT" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="AZW-Jh-vq4"/>
                             <constraint firstItem="sXV-Yt-WJT" firstAttribute="centerY" secondItem="QbJ-qx-dNc" secondAttribute="centerY" constant="-250" id="Aw4-cn-YaR"/>
-                            <constraint firstItem="gYG-Oo-Tnh" firstAttribute="centerY" secondItem="QbJ-qx-dNc" secondAttribute="centerY" id="Ecw-aE-5Dm"/>
                             <constraint firstItem="gYG-Oo-Tnh" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="PTa-tQ-Niu"/>
-                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="ZZj-KW-r7P"/>
-                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="top" secondItem="sXV-Yt-WJT" secondAttribute="bottom" constant="300" id="gSI-Ft-nug"/>
+                            <constraint firstItem="0hS-Gr-YRO" firstAttribute="centerX" secondItem="QbJ-qx-dNc" secondAttribute="centerX" id="m2l-XV-4cT"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -1359,7 +1388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8n-tf-v5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6300" y="660"/>
+            <point key="canvasLocation" x="6300.0000000000009" y="659.59821428571422"/>
         </scene>
         <!--About-->
         <scene sceneID="kbe-Wf-cWm">
@@ -1665,9 +1694,11 @@ https://cocoacasts.com/ what-is-a-singleton -and-how-to-create-one-in-swift�
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="brain" catalog="system" width="128" height="104"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="lungs.fill" catalog="system" width="128" height="92"/>
+        <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="play.circle.fill" catalog="system" width="128" height="121"/>
         <image name="suit.heart.fill" catalog="system" width="128" height="109"/>
         <image name="video.circle.fill" catalog="system" width="128" height="121"/>

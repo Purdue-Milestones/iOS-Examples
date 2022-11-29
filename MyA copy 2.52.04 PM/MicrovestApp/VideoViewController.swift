@@ -8,6 +8,7 @@
 import UIKit
 import AVKit
 import MobileCoreServices
+import UniformTypeIdentifiers
 
 class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
@@ -48,29 +49,32 @@ class VideoViewController: UIViewController, UIImagePickerControllerDelegate, UI
             imagePicker.delegate = self
             imagePicker.sourceType = .camera
             imagePicker.mediaTypes = [UTType.movie.identifier]
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = true
+            
             self.present(imagePicker, animated: true, completion: nil)
         } else {
             print("Camera Unavailable")
         }
     }
-    
        
     private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         dismiss(animated: true, completion: nil)
-        guard let mediaType = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as? String,
-                    mediaType == (UTType.movie.identifier),
+        
+        guard let mediaType = info[UIImagePickerController.InfoKey.mediaType.rawValue] as? String,
+              mediaType == (UTType.movie.identifier as String),
               let url = info[UIImagePickerController.InfoKey.mediaURL.rawValue] as? URL,
                     UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(url.path)
                     else {
                         return
                 }
                 // Handle a movie capture
+        
                 UISaveVideoAtPathToSavedPhotosAlbum(
                     url.path,
                     self,
                     #selector(video(_:didFinishSavingWithError:contextInfo:)),
                     nil)
+        
        }
        
        @objc func video(_ videoPath: String, didFinishSavingWithError error: Error?, contextInfo info: AnyObject) {
